@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale=1.0>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+
+                </li>
+            </ul>
+        </nav>
+        <section id="contact">
+                
+                <div class="row">
+                    <div class="content">
+                      
+                       <div class="information">
+                          <h1>Send me a message</h1>
+                          <div class="contact-form-container">
+                              <div class="contact-form">
+                                  <form action="" method="POST">
+                                      <div class="form-control">
+                                          <label for="name">Name</label>
+                                          <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required>
+                                      </div>
+                                      <div class="form-control">
+                                          <label for="email">Email</label>
+                                          <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required>
+                                      </div>
+                                      <div class="form-control">
+                                          <label for="message">Message</label><br>
+                                          <textarea name="message" id="message" cols="50" rows="10" placeholder="Entere your Message" class="input-field" required></textarea>
+                                      </div>
+                                      <input type="submit" value="Submit" id="submit-btn" class="submit-btn">
+                                  </form>
+                              </div>
+                          </div>
+                          
+                          <div class="socials">
+                              <a href="https://www.facebook.com/Devu.1820/" target="_blank"><img src="fb.png" alt="" class="sico sico-card"></a>
+                              <a href="https://github.com/Devanshi182" target="_blank"><img src="git.png" alt="" class="sico sico-card"></a>
+                              <a href="https://www.linkedin.com/in/devanshi-pathak-a99a37150/" target="_blank"><img src="linkedin.png" alt="" class="sico sico-card"></a>
+                          </div>
+                          
+                       <div class="infobg"></div>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+            
+            <script>
+                var menuList = document.getElementById("menuList");
+                menuList.style.maxHeight = "0px";
+                
+                function togglemenu(){
+                    if(menuList.style.maxHeight == "0px"){
+                        menuList.style.maxHeight = "130px";
+                    }
+                    else{
+                        menuList.style.maxHeight = "0px";
+                    }
+                }
+            </script>
+        </section>
+    </body>
+</html>
